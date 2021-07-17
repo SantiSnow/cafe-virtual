@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+    #mySidebar{
+        display:none;
+        z-index:2;
+        width:20%;
+        min-width:300px
+    }
+    #closeMenu{
+        position: absolute;
+        right: 0;
+        margin-bottom: 5%;
+    }
+    #topBarContainer{
+        background-color: #509ae9a6;
+    }
+    .imgPreview{
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="cerrarMenu()" class="w3-button" id="closeMenu"><i class="fas fa-times"></i></a>
+
+        <a href="" onclick="cerrarMenu()" class="w3-bar-item w3-button">Libros</a>
+        <a href="" onclick="cerrarMenu()" class="w3-bar-item w3-button">Articulos</a>
+        <a href="" onclick="cerrarMenu()" class="w3-bar-item w3-button">Mi cuenta</a>
+    </nav>
+
+    <div class="w3-top" id="topBar">
+        <div class="w3-white w3-xlarge" id="topBarContainer">
+
+            <div class="w3-button w3-padding-16 w3-left" onclick="abrirMenu()"> <i class="fas fa-bars"></i> </div>
+            <div class="w3-center w3-padding-16">El Cafe Virtual</div>
+
+        </div>
+    </div>
+
+
+    <div class="w3-main w3-content w3-padding" style="margin-top:100px">
+
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="dummy.png" alt="" class="imgPreview" style="width:100%">
+                <h3>Título del libro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <hr id="about">
+
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="w3-half">
+                <h3>Pie de página</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit numquam corporis ab, 
+                laborum voluptatem, architecto accusantium vel pariatur deserunt magnam nemo totam quas doloribus 
+                incidunt aspernatur dolor cumque laboriosam!</p>
+            </div>
+            <div class="w3-half">
+                <h3>Pie de página</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit numquam corporis ab, 
+                laborum voluptatem, architecto accusantium vel pariatur deserunt magnam nemo totam quas doloribus 
+                incidunt aspernatur dolor cumque laboriosam!</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function cerrarMenu() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
